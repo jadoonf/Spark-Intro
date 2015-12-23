@@ -70,7 +70,7 @@ object WhiteHouse {
 
 		visiteesQuery.explain(true)
 
-		val projectVisiteesQuery = visiteesQuery.map( name => ( name, 1 ))      //as (k,v) pairs
+		val projectVisiteesQuery = visiteesQuery.map( name => ( name, 1 ))    //as (k,v) pairs
 
 		val reduceVisiteesQuery = projectVisiteesQuery.reduceByKey(_+_)
 

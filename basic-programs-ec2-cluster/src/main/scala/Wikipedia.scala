@@ -16,7 +16,7 @@ object Wikipedia {
   val SPARK_MASTER = "spark://" + MASTER + ":7077"
   val HDFS = "hdfs://" + MASTER + ":9000"
 
-  //change the following paths for your own cluster accordingly
+  //change the following paths for your own cluster accordingly.
 
   val outputDirNoOutlinks = HDFS + "/Wikipedia-output/no-outlinks" 
   val outputDirNoInlinks = HDFS + "/Wikipedia-output/no-inlinks"
