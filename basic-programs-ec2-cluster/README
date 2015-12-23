@@ -1,0 +1,31 @@
+README
+
+Program 1: WhiteHouse Visitors
+
+The program takes input from a csv file (Whitehouse visitors dataset publicly availble online) and outputs (in form of .txt files) the 10 most frequent vistors, visitees, and visitor-visitee combinations. 
+
+Program 2: Wikipedia page links
+
+The program takes input from two text files: (1) A list of page id's with their outlinks provided against each entry
+(2) A list of page titles and its corresponding index, where index is the original page id. 
+
+
+------------------------------------
+
+
+- For both programs to run on EC2 cluster:
+	- fix paths (add your AWS credentials in the S3 bucket path)
+
+Submission guidelines and conf:
+
+For Whitehouse:
+
+- add databricks spark csv library in the spark-submit script
+
+/home/ubuntu/spark/bin/spark-submit --packages com.databricks:spark-csv_2.10:1.1.0 --class WhiteHouse /home/ubuntu/hw1/target/scala-2.10/hw1_2.10-0.1.jar
+
+For Wikipedia:
+
+- change driver and executor memory to 10G
+
+/home/ubuntu/spark/bin/spark-submit -class Wikipedia --driver-memory 10G --executor-memory 10G  /home/ubuntu/hw1/target/scala-2.10/hw1_2.10-0.1.jar
