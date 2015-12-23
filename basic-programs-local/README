@@ -1,4 +1,4 @@
-README
+Guidelines:
 
 Program 1: WhiteHouse Visitors
 
@@ -13,7 +13,7 @@ The program takes input from two text files: (1) A list of page id's with their 
 ------------------------------------
 
 
-- For both programs to run locally:
+For both programs to run locally:
 	- fix paths 
 	- Add input files (if facing trouble, email fkjadoon94@gmail.com)
 
